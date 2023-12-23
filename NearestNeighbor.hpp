@@ -36,7 +36,6 @@ public:
                 nodes.push_back(Node(id, x, y)); 
             }
         }
-
         // BEGIN ALGO
         std::vector<int> visitedNodes;
         visitedNodes.push_back(1);
@@ -71,7 +70,7 @@ public:
         for (int node : visitedNodes) {
             std::cout << node << " ";
         }
-        std::cout << "\nTotal Distance: " << totalDistance << "\nTime in ms: " << totalTime << std::endl;
+        std::cout << "\nTotal Distance: " << totalDistance << "\nTime in millis: " << totalTime << std::endl;
         file.close();
     }
 };
